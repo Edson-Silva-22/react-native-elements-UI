@@ -46,13 +46,13 @@ const styles = StyleSheet.create({
 
   dialog: {
     backgroundColor: '#1f2240',
+    maxWidth: 400
   },
 
   img: {
     aspectRatio: 1,
     width: '100%',
-    flex: 1,
-    borderRadius: 500,
+    borderRadius: 350/2,
   },
 
   label: {
