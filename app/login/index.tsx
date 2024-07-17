@@ -1,6 +1,7 @@
 import { SafeAreaView, Text, View } from "react-native";
 import loginStyles from "@/styles/login";
 import { Card, Input } from "@rneui/themed";
+import { Button } from "@rneui/base";
 
 export default function Login(){
     return (
@@ -40,6 +41,12 @@ export default function Login(){
                         color: '#ccd0cf',
                         size: 16
                     }}
+                    rightIcon={{
+                        type: 'ionicon',
+                        name: 'eye',
+                        color: '#ccd0cf',
+                        size: 16
+                    }}
                     label="Senha"
                     labelStyle={{
                         fontSize: 14,
@@ -48,9 +55,23 @@ export default function Login(){
                     }}
                     inputStyle={{
                         color: '#ccd0cf',
-                        fontSize: 16
+                        fontSize: 16,
                     }}
+                    secureTextEntry
+                    inputContainerStyle={{
+                        borderWidth: 0,
+                    }}
+                    errorMessage="É necessário informar o senha"
+                    errorStyle={{color: 'red'}}
                 ></Input>
+
+                <Button 
+                    title="Entrar"
+                    buttonStyle={loginStyles.cardButton}
+                    titleStyle={{
+                        color: '#4a5c6a'
+                    }}
+                ></Button>
             </Card>
         </SafeAreaView>
     )

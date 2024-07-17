@@ -18,8 +18,16 @@ const loginStyles = StyleSheet.create({
     cardTitle:{
         color: '#ccd0cf', 
         textAlign: 'left',
-        fontSize: 24
+        fontSize: 24,
     },
+
+    cardButton: {
+        width: 100,
+        borderRadius: 5,
+        backgroundColor: '#3dc478',
+        marginHorizontal: 'auto',
+        marginTop: 50
+    }
 })
 
 export default loginStyles
